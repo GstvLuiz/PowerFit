@@ -636,16 +636,6 @@ nav {
     overflow: hidden;
 }
 
-.img-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    background-image: linear-gradient(45deg, #444 25%, transparent 25%, transparent 75%, #444 75%, #444),
-                      linear-gradient(45deg, #444 25%, transparent 25%, transparent 75%, #444 75%, #444);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-}
-
 .social-icons {
     position: absolute;
     bottom: 0;
@@ -1447,3 +1437,14 @@ footer {
         height: 40px;
     }
 }
+
+
+/* Ajustes para preenchimento de imagem */
+.instrutor-img img,
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Garante que a imagem se comporte como bloco */
+}
+
